@@ -1,17 +1,13 @@
-// utils/notifications.js
+// eslint-disable-next-line no-unused-vars
 import React, { createContext, useContext, useState } from 'react';
 
-// Crée un contexte pour gérer les notifications
 const NotificationContext = createContext();
 
-// Hook personnalisé pour utiliser le contexte des notifications
 export const useNotifications = () => useContext(NotificationContext);
 
-// Composant fournisseur pour gérer l'état des notifications
 export const NotificationProvider = ({ children }) => {
   const [notification, setNotification] = useState(null);
 
-  // Fonction pour afficher une notification
   const showNotification = (message) => {
     setNotification(message);
 

@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
-import PropTypes from 'prop-types'; // Import de PropTypes
+import PropTypes from 'prop-types';
 import ArticleCard from '../Home/ArticleCard';
 
 const ArticleList = ({ articles }) => {

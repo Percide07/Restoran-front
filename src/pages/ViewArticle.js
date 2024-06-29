@@ -1,7 +1,7 @@
-// pages/ViewArticle.js
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
-import { useParams } from 'react-router-dom'; // Utilise useParams pour obtenir les paramètres d'URL
-import { useAuth } from '../context/AuthContext'; // Utilise le contexte d'authentification
+import { useParams } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 
 const ViewArticle = () => {
   const { id } = useParams(); // Obtient l'ID de l'article depuis les paramètres d'URL
@@ -22,7 +22,7 @@ const ViewArticle = () => {
         <p className="mb-4">{article.content}</p>
         {user && (
           <div>
-            {/* Ajoutez des fonctionnalités supplémentaires comme l'édition ou la suppression de l'article */}
+            
           </div>
         )}
       </div>

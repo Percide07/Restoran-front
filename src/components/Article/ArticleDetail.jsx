@@ -5,7 +5,6 @@ import { useParams } from 'react-router-dom';
 const ArticleDetail = () => {
   const { id } = useParams();
 
-  // Simuler un article pour l'exemple
   const article = {
     id: id,
     title: "Titre de l'article",

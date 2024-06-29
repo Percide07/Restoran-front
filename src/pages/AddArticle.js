@@ -1,7 +1,7 @@
-// pages/AddArticle.js
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
-import { useAuth } from '../context/AuthContext'; // Utilise le contexte d'authentification
-import { useNotifications } from '../utils/notifications'; // Utilise le gestionnaire de notifications
+import { useAuth } from '../context/AuthContext';
+import { useNotifications } from '../utils/notifications';
 
 const AddArticle = () => {
   const { user } = useAuth(); // Obtient l'utilisateur depuis le contexte d'authentification
@@ -32,12 +32,12 @@ const AddArticle = () => {
                 required
               />
             </div>
-            {/* Ajoutez d'autres champs pour la description, l'image, la catégorie, etc. */}
+            
             <button
               type="submit"
               className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md"
             >
-              Ajouter l'article
+              Ajouter un article
             </button>
           </form>
         ) : (

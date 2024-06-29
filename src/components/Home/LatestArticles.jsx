@@ -1,11 +1,14 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
+import pict1 from '../../assets/pictures/pict1'
+import pict2 from '../../assets/pictures/pict2'
+import pict3 from '../../assets/pictures/pict3'
 
 const LatestArticles = () => {
   const latestArticles = [
-    { id: 1, title: "Titre de l'article 1", image: "https://via.placeholder.com/150" },
-    { id: 2, title: "Titre de l'article 2", image: "https://via.placeholder.com/150" },
-    { id: 3, title: "Titre de l'article 3", image: "https://via.placeholder.com/150" },
+    { id: 1, title: "Titre de l'article 1", image: {pict1} },
+    { id: 2, title: "Titre de l'article 2", image: {pict2} },
+    { id: 3, title: "Titre de l'article 3", image: {pict3} },
   ];
 
   return (

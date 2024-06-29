@@ -1,7 +1,7 @@
-// pages/Home.js
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
-import { useAuth } from '../context/AuthContext'; // Utilise le contexte d'authentification
-import { useNotifications } from '../utils/notifications'; // Utilise le gestionnaire de notifications
+import { useAuth } from '../context/AuthContext';
+import { useNotifications } from '../utils/notifications';
 
 const Home = () => {
   const { user, logout } = useAuth(); // Obtient l'utilisateur et la fonction de déconnexion depuis le contexte d'authentification
@@ -26,9 +26,9 @@ const Home = () => {
             </button>
           </div>
         ) : (
-          <p>Vous n'êtes pas connecté.</p>
+          <p>Vous êtes hors connexion.</p>
         )}
-        {/* Ici vous pouvez afficher la liste des articles, les derniers articles, les catégories, etc. */}
+        
       </div>
     </div>
   );

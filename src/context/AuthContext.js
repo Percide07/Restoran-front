@@ -1,31 +1,26 @@
 // eslint-disable-next-line no-unused-vars
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import PropTypes from 'prop-types'; // Import PropTypes for props validation
-import axios from '../services/api'; // Import Axios configured for the API
-import { useNotifications } from '../utils/notifications'; // Use the notifications handler
-import { useHistory } from 'react-router-dom'; // Use useHistory for redirection after authentication
+import PropTypes from 'prop-types'; 
+import axios from '../services/api'; 
+import { useNotifications } from '../utils/notifications';
+import { useHistory } from 'react-router-dom';
 
-// Create a context to manage authentication
 const AuthContext = createContext();
 
-// Custom hook to use the authentication context
 export const useAuth = () => useContext(AuthContext);
 
-// Provider component to manage authentication state
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const { showNotification } = useNotifications();
   const history = useHistory();
 
-  // Check authentication status on initial load
   useEffect(() => {
     checkAuthStatus();
   }, []);
 
-  // Function to check authentication status
   const checkAuthStatus = async () => {
     try {
-      const response = await axios.get('/auth/check'); // Endpoint to check authentication server-side
+      const response = await axios.get('/auth/check');
       setUser(response.data.user);
     } catch (error) {
       console.error('Error checking authentication:', error);
