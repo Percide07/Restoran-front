@@ -1,0 +1,11 @@
+{
+    "articles": [
+      { "id": 1, "title": "Premier article", "content": "Contenu de l'article 1" },
+      { "id": 2, "title": "Deuxième article", "content": "Contenu de l'article 2" }
+    ],
+    "categories": [
+      { "id": 1, "name": "Catégorie 1" },
+      { "id": 2, "name": "Catégorie 2" }
+    ]
+  }
+  

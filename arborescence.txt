@@ -1,0 +1,39 @@
+/src
+├── /assets
+│   └── /images              # Dossier pour les images du site
+├── /components
+│   ├── /Layout
+│   │   ├── Header.jsx       # En-tête commun à toutes les pages
+│   │   └── Navigation.jsx   # Navigation entre les pages
+│   ├── /Home
+│   │   ├── Home.jsx         # Page d'accueil principale
+│   │   ├── ArticleCard.jsx  # Carte d'un article pour la liste
+│   │   ├── LatestArticles.jsx # Derniers articles affichés
+│   │   ├── Categories.jsx   # Liste des catégories
+│   │   └── SearchForm.jsx   # Formulaire de recherche
+│   ├── /AddArticle
+│   │   └── AddArticleForm.jsx  # Formulaire pour ajouter un article
+│   ├── /Article
+│   │   ├── ArticleDetail.jsx  # Détails d'un article individuel
+│   │   └── ArticleList.jsx    # Composant pour afficher une liste d'articles
+│   ├── /About
+│   │   └── About.jsx        # Page À PROPOS
+│   └── /Notifications
+│       └── Notification.jsx # Composant pour les notifications
+├── /pages
+│   ├── Home.js             # Page d'accueil (alternative avec .js)
+│   ├── AddArticle.js       # Page d'ajout d'article (alternative avec .js)
+│   └── ViewArticle.js      # Page de visualisation d'article (alternative avec .js)
+├── /services
+│   ├── api.js             # Configuration Axios pour l'API
+│   ├── cloudinary.js      # Configuration pour charger les images vers Cloudinary
+│   └── jsonServer.js      # Configuration de json-server
+├── /utils
+│   └── notifications.js   # Utilitaire pour gérer les notifications
+├── App.jsx                # Composant principal de l'application
+├── main.jsx              # Point d'entrée de l'application
+├── routes.js              # Gestion des routes (si nécessaire)
+└── /context
+    └── AuthContext.js     # Contexte d'authentification (si nécessaire)
+    tailwind.config.js
+    
